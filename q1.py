@@ -5,7 +5,7 @@ try:
     conn = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="azam",
+        password="Faizaan123",
         database="faizaan"
     )
 
@@ -29,11 +29,11 @@ try:
                         state_province TEXT,
                         country_id INT
                     )''')
-        cur.execute('''INSERT INTO countries VALUES 
+        cur.execute('''INSERT INTO countries VALUES
                         (1, 'Canada', 2),
                         (2, 'USA', 2),
                         (3, 'France', 3)''')
-        cur.execute('''INSERT INTO locations VALUES 
+        cur.execute('''INSERT INTO locations VALUES
                         (1, '123 Main St', 'A1B 2C3', 'Toronto', 'Ontario', 1),
                         (2, '456 Elm St', 'X1Y 3Z6', 'Montreal', 'Quebec', 1),
                         (3, '789 Oak St', 'M4L 5T9', 'Vancouver', 'British Columbia', 2)''')
